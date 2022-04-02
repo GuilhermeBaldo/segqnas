@@ -173,7 +173,7 @@ def main(data_path, output_folder, limit_data, random_seed):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_path', type=str, required=True,
+    parser.add_argument('--data_path', type=str, default='pascalvoc12', required=True,
                         help='Directory where PASCAL VOC 2012 is, or where to download it to.')
     parser.add_argument('--output_folder', type=str, default='pascalvoc12_tfr',
                         help='Name of the folder that will contain the tfrecords files; it is '
